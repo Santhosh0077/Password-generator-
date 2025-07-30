@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Password Generator 🔐</h1>
+    <div class="input-group">
+      <label>Uppercase Letters</label>
+      <input type="number" id="upperCount" min="0" value="2"/>
+    </div>
+    <div class="input-group">
+      <label>Lowercase Letters</label>
+      <input type="number" id="lowerCount" min="0" value="2"/>
+    </div>
+    <div class="input-group">
+      <label>Numbers</label>
+      <input type="number" id="numberCount" min="0" value="2"/>
+    </div>
+    <div class="input-group">
+      <label>Special Characters</label>
+      <input type="number" id="symbolCount" min="0" value="2"/>
+    </div>
+    <button onclick="generatePassword()">Generate Password</button>
+
+    <div class="result">
+      <h2>Your Password:</h2>
+      <p id="passwordDisplay">********</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
